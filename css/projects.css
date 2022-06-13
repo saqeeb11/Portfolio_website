@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background-color: white;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(173, 169, 169);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: gray;
+}
+
+/* link styling */
+
+.underline-link{
+    text-decoration: none;
+}
+
+.underline-link:hover{
+    text-decoration: underline;
+}
+
+.project{
+    background-color: rgb(22, 22, 22);
+    padding: 45px 0px;
+}
+
+section{
+    width: 100%;
+}
+
+.project-view{
+    height: 80vh;
+    background-color: white;
+    padding: 30px;
+}
+
+.project-view>h1{
+    text-align: center;
+}
+
+.view-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.project-image{
+    height: 22rem;
+    width: 20rem;
+    object-fit: cover;
+    margin: 20px 10px;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.project-content{
+    margin: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 20px 15px;
+    border-radius: 3px;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
+    height: 22rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.git-link{
+    width: 300px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+
+    .project-view{
+        height: 100%;
+    }
+
+    .view-container{
+        flex-direction: column;
+    }
+
+    .view-container.row-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .project-image{
+        height: 200px;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: none;
+    }
+
+    .project-content{
+        width: 100%;
+        margin: 20px 0px;
+        box-shadow: none;
+        height: 100%;
+        /* text-align: center; */
+        padding: 10px;
+    }
+
+    .git-link{
+        flex-direction: column;
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .git-link .btn{
+        margin: 8px;
+    }
+}

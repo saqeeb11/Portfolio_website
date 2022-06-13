@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========bootstrap css=========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- =========bootstrap icon css=========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <!-- =========navbar css=========== -->
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- =========content-reveal css=========== -->
+    <link rel="stylesheet" href="css/content-reveal.css">
+
+    <!-- =========home css=========== -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- =========footer css=========== -->
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>saqeeb-home</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">ams</div>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-items active">home</a></li>
+                <li><a href="pages/about.html" class="nav-items">about</a></li>
+                <li><a href="pages/projects.html" class="nav-items">projects</a></li>
+                <li><a href="pages/blogs.html" class="nav-items">blogs</a></li>
+                <li><a href="pages/contact.html" class="nav-items">contact</a></li>
+
+                <button class="btn btn-outline-light list-button" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">A M S</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="offcanvas-links">
+                            <a href="#home" class="offcanvas-active">home</a>
+                            <a href="./pages/about.html">about</a>
+                            <a href="./pages/projects.html">projects</a>
+                            <a href="./pages/blogs.html">blogs</a>
+                            <a href="./pages/contact.html">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <h1>Mohammed Saqeeb</h1>
+        <p>Fullstack web developer</p>
+        <a href="https://www.linkedin.com/in/mohammed-saqeeb-7a8240229/" target="_blank">Linked <i
+                class="bi bi-linkedin"></i></a>
+        <div class="social-btn">
+            <a href="www.facebook.com"><i class="bi bi-facebook"></i></a>
+            <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
+            <a href="www.twitter.com"><i class="bi bi-twitter"></i></a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-header">
+            <h1>About me</h1>
+            <a href="/pages/about.html" class="underline-link">read more ></a>
+        </div>
+        <div class="about-content">
+            <div class="about-image reveal">
+                <img src="./img/home-about.jpg" alt="about">
+            </div>
+            <div class="about-para reveal">
+                <p>&emsp;&emsp;One who works hard at his craft and really enjoys it.Other than this. Have a good
+                    knowlegde of technical, design and programming languages. and can work well under pressure and wants
+                    to automate the daily boring tasks toimprove productivity. Adapt at explaining complex computer
+                    development concepts andprocesses to a variety of professional and lay audiences in a clear and
+                    accessible manner. Ableto work well independently or as part of a professional development team and
+                    can performscrum master role for the agile development methodology!!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="project-header">
+            <h1>Project</h1>
+            <a href="/pages/projects.html" class="underline-link">view all ></a>
+        </div>
+        <div class="project-cards reveal">
+            <div class="card" style="width: 18rem;">
+                <img src="img/blog1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">view project</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/blog2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">view project</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/blog3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">view project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <div class="blog-header">
+            <h1>Blogs</h1>
+            <a href="/pages/blogs.html" class="underline-link">read more ></a>
+        </div>
+        <div class="blogs-card reveal">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/blog1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/blog1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/blog1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <p class="footer-title">Follow</p>
+                <a href="/" class="underline-link"><i class="bi bi-twitter"></i> : mohammed saqeeb</a><br>
+                <a href="/" class="underline-link"><i class="bi bi-facebook"></i> : Md Saqeeb A I</a><br>
+                <a href="/" class="underline-link"><i class="bi bi-instagram"></i> : saqeeb___11</a><br>
+                <a href="/" class="underline-link"><i class="bi bi-github"></i> : saqeeb11</a><br>
+            </div>
+
+            <div class="footer-links">
+                <p class="footer-title">Links</p>
+                <a href="#home" class="underline-link">Home</a><br>
+                <a href="pages/about.html" class="underline-link">About</a><br>
+                <a href="pages/projects.html" class="underline-link">Projects</a><br>
+                <a href="pages/blogs.html" class="underline-link">Blogs</a><br>
+                <a href="pages/contact.html" class="underline-link">Contact</a><br>
+            </div>
+
+            <div class="footer-contact">
+                <p class="footer-title">Contact</p>
+                <p><i class="bi bi-envelope"></i> : mohammedsaqeeb8122@gmail.com</p>
+                <a href="pages/contact.html" class="underline-link"><i class="bi bi-telephone"></i> : Contact</a>
+            </div>
+
+            <div class="country">
+                <p class="footer-title">Country</p>
+                <p><i class="bi bi-geo-alt-fill"></i> : India</p>
+            </div>
+
+        </div>
+        <div class="footer-corner">
+            <p>copy right &copy; 2019 - 2022 all right received</p>
+        </div>
+    </footer>
+
+    <!-- =============nav-tran js============== -->
+    <script src="js/nav-trans.js" defer></script>
+
+    <!-- =============scroll-reveal js============== -->
+    <script src="js/scroll-reveal.js" defer></script>
+
+    <!-- =============bootstrap js============== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    user-select: none;
+    z-index: 1000;
+}
+
+.sticky .navbar{
+    background-color: white;
+}
+
+.navbar .logo{
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    user-select: none;
+}
+
+.sticky .navbar .logo{
+    color: black;
+}
+
+.nav-list{
+    display: flex;
+    margin: 0px 10px;
+}
+
+.nav-list li{
+    list-style: none;
+    margin: 5px;
+}
+
+.nav-list .nav-items{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sticky .nav-list .nav-items{
+    color: black;
+}
+
+.nav-list .nav-items:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+}
+
+.nav-list .active:hover{
+    background-color: rgb(58, 134, 255);
+    color: white;
+}
+
+.nav-list .active{
+    background-color: rgb(96, 157, 255);
+    color: white;
+}
+
+.sticky .nav-list .active{
+    background-color: black;
+    color: white;
+}
+
+/* offcanvas styling */
+
+.bi-list{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+.sticky .bi-list{
+    color: black;
+}
+
+.list-button{
+    height: 40px;
+    display: none;
+    margin-right: 5px;
+    padding: 3px 8px;
+}
+
+.offcanvas-links{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.offcanvas-links a{
+    padding: 10px 8px;
+    margin: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.offcanvas-links .offcanvas-active{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-list li{
+        display: none;
+    }
+
+    .list-button{
+        display: block;
+    }
+}
+
